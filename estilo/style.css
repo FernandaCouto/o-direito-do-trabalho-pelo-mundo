@@ -1,0 +1,412 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #333333;
+    --cor1: #003366;
+    --cor2: #103e66;
+    --cor3: #0067a0;
+    --cor4: #54aad1;
+    --cor5: #007b5f;
+    --cor6: #fbb615;
+    --cor7: #eeeeee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.158);
+    height: 74.2vh;
+    min-width: 300px;
+    max-width: 1780px;
+    padding: 10px;
+    margin: auto;
+}
+
+.navmenusuperior {
+    background-color: var(--cor1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.158);
+    padding: 10px;
+}
+
+.navmenusuperio__link {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: left;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.navmenusuperio__link:hover {
+    background-color: var(--cor4);
+}
+
+
+/*estilo pagina inicial*/
+
+.navlinksexternos {
+    background-color: #eeeeee;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.158);
+    font-size: 14px;
+    font-weight: 400;
+    height: auto;
+    min-width: 300px;
+    max-width: 1800px;
+    line-height: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: auto;
+    text-align: center;
+}
+
+.navlinksexternos__link {
+    color: #333333;
+    cursor: pointer;
+    font-size: 15.4px;
+    font-weight: 700;
+    line-height: 22px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navlinksexternos__link:hover {
+    background-color: var(--cor4);
+    color: white;
+}
+
+.firstpage {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+    padding: 10px;
+}
+#firstpage__titulo {
+    font-size: 8rem;
+    text-align: center;
+}
+#firstpage__link {
+    color: var(--cor4);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+#firstpage__link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    background-color:var(--cor1);
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#footer__dadosdabiblioteca {
+    display: flex;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    position: relative;
+}
+
+
+/*estilo pagina indice de países*/
+
+.indicedepaises {
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.158);
+    height: auto;
+    min-width: 300px;
+    max-width: 1780px;
+    padding: 10px;
+    margin: auto;
+}
+
+.acessopais {
+    color: var(--cor2);
+    text-align: left;
+    text-decoration: none;
+}
+
+.acessopais_naocadastrado {
+    color: #738e94;
+    text-align: left;
+    text-decoration: none;
+}
+
+.acessopais:hover {
+    text-decoration: underline;
+}
+
+.titulos {
+    color: var(--cor2);
+    font-size: 10vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    line-height: 18vh;
+}
+
+#indicedepaises__navrapida {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.indicedepaises__navrapida__alfabeto {
+    text-align: center;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.indicedepaises__navrapida__alfabeto__letras {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.indicedepaises__navrapida__alfabeto__letras:hover {
+    background-color: var(--cor3);
+    color: white;
+    text-decoration: none;
+}
+
+.informacoesadicionais__navinferior__link {
+    color: var(--cor3);
+    font-size: 17px;
+    font-weight: 700;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.informacoesadicionais__navinferior__link:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.linksselecmodonav:hover {
+    text-decoration: underline;
+}
+
+/*estilo pagina modo de navegação*/
+
+#main__indice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.158);
+    height: 77.6%;
+    min-width: 300px;
+    max-width: 1780px;
+}
+
+#main__indice>h1 {
+    text-align: center;
+    color: var(--cor2);
+    font-size: 6vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    line-height: 10vh;
+}
+
+#main__nav {
+    display: flex;
+    gap: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+}
+
+.main__nav__link {
+    color: var(--cor3);
+    text-decoration: none;
+}
+
+.main__nav__link:hover {
+    text-decoration: underline;
+}
+
+/*estilo pagina de países*/
+
+.paises {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.158);
+    height: auto;
+    min-width: 300px;
+    max-width: 1780px;
+}
+
+.infopais {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: left;
+    padding: 20px;
+}
+
+.paises__identificacao__titulo {
+    color: var(--cor1);
+    font-size: 5vw;
+    font-weight: 800;
+    padding-left: 20px;
+}
+
+.paises__identificacao__nomeoficial {
+    color: black;
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.article__dadospais {
+    color: #738e94;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    text-align: left;
+}
+.article__metadados {
+    color: var(--cor1);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    text-align: left;
+}
+
+.menulateral__bandeira {
+    padding-bottom: 20px;
+}
+.menulateral__linksimportantes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+.menulateral__linksimportantes__link__externo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--cor4);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.menulateral__linksimportantes__link__externo:hover {
+    text-decoration: underline;
+}
+
+.paginaexterna__icon {
+    display: none; /* Oculta o ícone por padrão */
+}
+
+.menulateral__linksimportantes__link__externo:hover>.paginaexterna__icon {
+    display: inline; /* Exibe o ícone ao passar o mouse no título */
+}
+
+.informacoesadicionais {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 100px;
+}
+
+.informacoesadicionais__ultimaatualizacao> h3 {
+    color: #738e94;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    text-align: left;
+}
+
+.informacoesadicionais__ultimaatualizacao> p {
+    color: var(--cor1);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+/*estilo pagina índice de países*/
+
+#main__listagemdepaises{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.158);
+    min-width: 300px;
+    max-width: 1780px;
+    padding: 15px;
+    gap: 20px;
+    height: auto;
+}
+
+#main__listagemdepaises>h1 {
+    text-align: center;
+    color: var(--cor2);
+    font-size: 6vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    line-height: 10vh;
+}
+
+#main__listagemdepaises__navrapida {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.alfabeto {
+    text-align: center;
+}
+
+.letras {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.letras:hover {
+    background-color: var(--cor3);
+    color: white;
+    text-decoration: none;
+}
