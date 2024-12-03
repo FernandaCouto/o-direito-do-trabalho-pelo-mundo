@@ -410,3 +410,38 @@ p {
     color: white;
     text-decoration: none;
 }
+
+/*estilo pagina doutrina*/
+
+.referencia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.doutrina__referencia {
+    font-size: 18px;
+    text-align: left;
+}
+
+
+.doutrina__referencia__disponivelem {
+    color: #fbb615;
+}
+.doutrina__referencia__paisesrelacionados {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0067a0;
+}
+
+.doutrina__referencia__paisesrelacionados__pais {
+    color: #fbb615;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.doutrina__referencia__paisesrelacionados__pais:hover {
+    text-decoration: underline;
+}
